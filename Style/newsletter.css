@@ -1,0 +1,71 @@
+.newsletter_section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.newsletter_section .newsletter_container{
+    width: 70%;
+    max-width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter_section .newsletter_container .newsletter_inner{
+    /* background: url('./images/back4\(green\).jpg') no-repeat; */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1161%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(169%2c 233%2c 197%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c571.238C108.187%2c563.29%2c211.36%2c529.532%2c302.663%2c470.953C394.016%2c412.342%2c464.515%2c330.745%2c520.124%2c237.533C581.117%2c135.297%2c649.035%2c26.785%2c638.385%2c-91.786C627.562%2c-212.284%2c544.169%2c-311.488%2c462.774%2c-400.996C382.905%2c-488.826%2c293.955%2c-585.055%2c176.191%2c-600.052C61.686%2c-614.634%2c-31.532%2c-516.462%2c-140.293%2c-477.795C-241.179%2c-441.928%2c-361.757%2c-454.401%2c-439.769%2c-381.062C-520.16%2c-305.487%2c-549.33%2c-190.424%2c-562.503%2c-80.876C-575.471%2c26.967%2c-552.748%2c133.248%2c-513.807%2c234.648C-472.825%2c341.362%2c-428.28%2c454.985%2c-332.658%2c517.626C-236.763%2c580.446%2c-114.331%2c579.637%2c0%2c571.238' fill='%237fdea9'%3e%3c/path%3e%3cpath d='M1440 938.029C1522.718 951.463 1621.377 996.225 1686.261 943.1890000000001 1752.846 888.762 1725.421 780.756 1736.7060000000001 695.501 1744.703 635.083 1751.567 576.775 1742.7440000000001 516.472 1733.94 456.304 1717.595 398.866 1685.726 347.077 1649.28 287.85 1612.912 217.93099999999998 1546.4470000000001 197.47500000000002 1479.895 176.99200000000002 1413.317 222.002 1346.856 242.77999999999997 1281.674 263.158 1212.101 273 1160.772 318.048 1105.3809999999999 366.661 1065.3310000000001 431.885 1049.3980000000001 503.84000000000003 1032.762 578.966 1034.242 660.825 1069.754 729.086 1104.566 796.001 1174.597 833.6890000000001 1240.287 870.76 1302.728 905.998 1369.229 926.5350000000001 1440 938.029' fill='%23d3f4e1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1161'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.newsletter_section .newsletter_container .newsletter_inner h1{
+    padding: 20px 0;
+    text-align: center;
+}
+.newsletter_section .newsletter_container .newsletter_inner .input_container{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.newsletter_section .newsletter_container .newsletter_inner .input_container input[type="email"]{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    background: whitesmoke;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: var(--light-color);
+}
+.newsletter_section .newsletter_container .newsletter_inner .input_container input[type="email"]::placeholder{
+    color: var(--light-color);
+}
+.newsletter_section .newsletter_container .newsletter_inner .input_container button{
+    background: lightgray;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+.newsletter_section .newsletter_container .newsletter_inner .input_container button:hover{
+    background: #FF5F1F;
+    color: var(--light-color);
+}

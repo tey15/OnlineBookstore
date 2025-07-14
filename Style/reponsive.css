@@ -1,0 +1,120 @@
+@media only screen and (max-width:940px){
+    .header{
+        height: 20%;
+    }
+    .header .header-1 .logo{
+        font-size: 1.1rem;
+    }
+    .hero_section .hero_container{
+        flex-direction: column
+    }
+    .hero_section .hero_container .col:nth-child(1){
+        width: 100%;
+    }
+    .hero_section .hero_container .col:nth-child(2){
+        display: none;
+    }
+    .hero_swiper_container .slider_container .text_container p{
+        display: none;
+    }
+    .features_section .features_container .col .content{
+        flex-direction: column;
+    }
+    .features_section .features_container{
+        gap: 20px;
+    }
+    .features_section .features_container .col .content .text_content_container{
+        text-align: center;
+    }
+    .trending_section .trending_container .col .title_container{
+        width: 100%;
+    }
+    .featured_books_section .featured_books_container{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:800px){
+    /* header .nav_container .menu_container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--light-color);
+        z-index: 1000;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: all 0.5s linear;
+    }
+    header .nav_container .menu_container .menu_list{
+        flex-direction: column;
+    }
+    header .nav_container .menu_container .menu_list li a{
+        font-size: clamp(1.2em,3vw,2em);
+    }
+    header .close-btn{
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #36454f;
+        color: var(--light-color);
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        transition: all 0.5s linear;
+    }
+    header .close-btn i{
+       color: var(--light-color);
+    }
+    header .close-btn:hover i{
+       background: #FF5F1F;
+    } */
+     /* header .menu_btn{
+        display: flex;
+        background: var(--text-color);
+     }
+    header .menu_btn i{
+        color: #fff;
+        font-size: 17px;
+     } */
+}
+@media only screen and (max-width:640px){
+    .features_section .features_container,.trending_section .trending_container,footer .footer_container,.copy_right_container,.flash_section .flash_container{
+        flex-direction: column;
+    }
+    .flash_section .flash_container .content_container{
+        flex-direction: column;
+    }
+    .trending_section .trending_container .col{
+        width: 100%;
+
+    }
+    .new_launch_section .new_launch_container{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .newsletter_section .newsletter_container{
+        max-width: 80%;
+    }
+   .newsletter_section .newsletter_container .newsletter_inner h1{
+    font-size: 18px;
+   }
+    .copy_right_container{
+        gap: 10px;
+    }
+    .hero_swiper_container .slider_container .text_container{
+        top: 5%;
+        width: 80%;
+    }
+    .hero_swiper_container .slider_container .text_container .btn_container{
+        display: none;
+    }
+    
+}

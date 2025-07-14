@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="./shopnow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- swipercdn -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+    <link rel="stylesheet" href="./Style/style.css">
+
+    <link rel="stylesheet" href="./Style/block.css">
+    <link rel="stylesheet" href="./Style/newsletter.css">
+    <link rel="stylesheet" href="./Style/Footer.css">
+    <link rel="stylesheet" href="./Style/reponsive.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./Style/contact.css">
+    <link rel="stylesheet" href="./index.html">
+</head>
+<body>
+<header class="header">
+  <div class="header-1">
+    <a href="#" class="logo"><i class="fas fa-book"></i>bookly</a>
+
+    <form action="" class="search-form">
+      <input type="search" placeholder="search for books..." id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+      <div id="search-btn" class="fas fa-search"></div>
+      <a href="./Shopnow.html#card_btn" class="fas fa-heart"></a>
+    <div class="cart-icon-container"> 
+        <a href="./index.html" class="fas fa-shopping-cart" id="cart-toggle-icon"></a>  
+    </div>
+      <div id="login-btn" class="fas fa-user"></div>
+       <div class="hamburger" id="hamburger-menu">&#9776;</div> <!-- Hamburger icon for mobile -->
+    </div>
+
+  </div>
+
+    <div class="header-2">
+    <nav class="navbar">
+        <ul class="menu_list">
+            <li><a href="./index.html#hero">home</a></li>
+            <li><a href="#specialoffers">Special Offers</a></li>
+            <li><a href="./index.html#bookonsale">Book On Sale</a></li>
+            <li><a href="./index.html#feature_book">Feature</a></li>
+            <!-- <li><a href="#flashsale">Flash Sale</a></li> -->
+            <li><a href="./index.html#testimonial">Blogs</a></li>
+             <li><a href="#contact">contact</a></li>
+        </ul>
+        <div id="close-navbar" class="fas fa-times"></div> <!-- Close icon -->
+    </nav>
+  </div>
+
+</header>
+<!-- login form -->
+<div class="login-form-container">
+
+  <div id="close-login-btn" class="fas fa-times"></div>
+
+  <form action="">
+    <h3>sign in</h3>
+     <span>username</span>
+    <input type="email" name="" class="box" placeholder="enter your email" id="">
+    <span>password</span>
+    <input type="password" name="" class="box" placeholder="enter your password" id="">
+    <div class="checkbox">
+      <input type="checkbox" name="" id="remember-me">
+      <label for="remember-me">remember me</label>
+    </div>
+    <input type="submit" value="sign in" class="btn">
+    <p>forgot password ? <a href="#">click here</a></p>
+    <p>Don't have an account ? <a href="#">Create one</a></p>
+  </form>
+</div>
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-container" id="contact">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="info-text">
+                    <h3>Visit Our Store</h3>
+                    <p>123 Book Street, Literary District<br>Reading City, RC 12345</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-phone"></i></div>
+                <div class="info-text">
+                    <h3>Call Us</h3>
+                    <p>Phone: (555) 123-4567<br>Toll Free: 1-800-BOOKLY</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                <div class="info-text">
+                    <h3>Email Us</h3>
+                    <p>info@bookly.com<br>support@bookly.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-globe"></i></div>
+                <div class="info-text">
+                    <h3>Follow Us</h3>
+                    <p>@BooklyStore on all social platforms<br>Join our reading community!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a topic</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="order">Order Support</option>
+                        <option value="book-request">Book Request</option>
+                        <option value="event">Events & Book Clubs</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+        <!-- Store Hours -->
+    <section class="hours-section">
+        <div class="hours-container">
+            <h2>Store Hours</h2>
+            <div class="hours-grid">
+                <div class="hours-item">
+                    <h3>Monday - Friday</h3>
+                    <p>9:00 AM - 8:00 PM</p>
+                </div>
+                <div class="hours-item">
+                    <h3>Saturday</h3>
+                    <p>9:00 AM - 9:00 PM</p>
+                </div>
+                <div class="hours-item">
+                    <h3>Sunday</h3>
+                    <p>10:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- NewSlater section Starts -->
+<div class="newsletter_section">
+    <div class="newsletter_container">
+        <div class="newsletter_inner">
+            <h1>Subscribe to Our Newsletter for Newest Books Update</h1>
+            <div class="input_container">
+                <input type="email" placeholder="Enter Your Email Here" name="newsletter" id="newsletter">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer section -->
+<footer class="footer_section">
+    <div class="footer_container">
+        <div class="col">
+                <div class="logo_container">
+                    <img src="./images/logo2.png" alt="logo" class="logo">
+                        <h3>Bookly</h3>
+                </div>
+                <div class="about_container">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui accusamus, eveniet perferendis accusantium dolore quibusdam sint? Incidunt, repellat! Facilis porro reprehenderit accusantium mollitia, debitis distinctio sed earum delectus nesciunt voluptas?</p>
+                </div>
+                <div class="social_container">
+                    <h1>Follow Us</h1>
+                    <div class="social_row">
+                        <button><i class="fa-brands fa-facebook"></i></button>
+                        <button><i class="fa-brands fa-youtube"></i></button>
+                        <button><i class="fa-brands fa-x-twitter"></i></button>
+                        <button><i class="fa-brands fa-instagram"></i></button>
+                    </div>
+                </div>
+        </div>
+         <div class="col">
+            <div class="menu_container">
+                <h1>Quick Links</h1>
+                            <ul class="menu_list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Special Offers</a></li>
+                                <li><a href="#">Flash Sale</a></li>
+                                <li><a href="#">Book On Sale</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="menu_container">
+                <h1>Books Categories</h1>
+                             <ul class="menu_list">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Novel</a></li>
+                                <li><a href="#">Motivation</a></li>
+                                <li><a href="#">Comedy</a></li>
+                                <li><a href="#">Romance</a></li>
+                                <li><a href="#">Crime</a></li>
+                                <li><a href="#">Mystery</a></li>
+                            </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="menu_container">
+                <h1>
+                Our Store
+                </h1>
+                <div class="map_container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.478695954292!2d104.89528870691791!3d11.50875030300548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaccccadd91787c0f%3A0xd84b1dc5930399d9!2sPRO%20Dolphin%20Cambodia!5e0!3m2!1sen!2skh!4v1750244704755!5m2!1sen!2skh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="address_container">
+                    <ul>
+                        <li>15, Example Road, Phnom Penh</li>
+                        <li>+855 10524888</li>
+                        <li>support@bookly.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy_right_container">
+        <div class="col">
+            <p>Books <i class="fa-regular fa-copyright"></i> All Rights Reserved</p>
+        </div>
+        <div class="col">
+            Made With <i class="fa-solid fa-heart love"></i> by Click To Gain
+        </div>
+    </div>
+</footer> 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js" integrity="sha512-j12pXc2gXZL/JZw5Mhi6LC7lkiXL0e2h+9ZWpqhniz0DkDrO01VNlBrG3LkPBn6DgG2b8CDjzJT+lxfocsS1Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+<script src="./shopnow.js"></script>
+
+</body>
+</html>

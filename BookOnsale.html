@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font Awesome icon -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- swipercdn -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Style/style.css">
+
+    <link rel="stylesheet" href="./Style/block.css">
+    <link rel="stylesheet" href="./Style/newsletter.css">
+    <link rel="stylesheet" href="./Style/Footer.css">
+    <link rel="stylesheet" href="./Style/reponsive.css">
+</head>
+<body>
+ 
+<header class="header">
+  <div class="header-1">
+    <a href="#" class="logo"><i class="fas fa-book"></i>bookly</a>
+
+    <form action="" class="search-form">
+      <input type="search" placeholder="search for books..." id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+      <div id="search-btn" class="fas fa-search"></div>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="./Shopnow.html" class="fas fa-shopping-cart"></a>
+      <div id="login-btn" class="fas fa-user"></div>
+       <div class="hamburger" id="hamburger-menu">&#9776;</div> <!-- Hamburger icon for mobile -->
+    </div>
+
+  </div>
+
+    <div class="header-2">
+    <nav class="navbar">
+        <ul class="menu_list">
+            <li><a href="./index.html#hero">home</a></li>
+            <li><a href="./index.html#specialoffers">Special Offers</a></li>
+            <li><a href="#bookonsale">Book On Sale</a></li>
+            <li><a href="./index.html#feature_book">Feature</a></li>
+            <li><a href="./index.html#testimonial">Blogs</a></li>
+            <!-- <li><a href="./Shopnow.html">Shop Now</a></li> -->
+            <li><a href="./contactus.html">contact</a></li>
+        </ul>
+        <div id="close-navbar" class="fas fa-times"></div> <!-- Close icon -->
+    </nav>
+  </div>
+
+
+</header>
+
+<!-- login form -->
+<div class="login-form-container">
+
+  <div id="close-login-btn" class="fas fa-times"></div>
+
+  <form action="">
+    <h3>sign in</h3>
+     <span>username</span>
+    <input type="email" name="" class="box" placeholder="enter your email" id="">
+    <span>password</span>
+    <input type="password" name="" class="box" placeholder="enter your password" id="">
+    <div class="checkbox">
+      <input type="checkbox" name="" id="remember-me">
+      <label for="remember-me">remember me</label>
+    </div>
+    <input type="submit" value="sign in" class="btn">
+    <p>forgot password ? <a href="#">click here</a></p>
+    <p>Don't have an account ? <a href="#">Create one</a></p>
+  </form>
+</div>
+
+<!-- <div class="Category_container">
+    <div class="card_container">
+        <article class="card_article">
+            <img src="./images/History.jpg" alt="image" class="card_img">
+            <div class="card_data">
+                <span class="card_description">Fiction,non fiction,Commeday and Romantic Series</span>
+                <h2 class="card_title">novel</h2>
+                <a href="#" class="card_button">Read More</a>
+            </div>
+        </article>
+        <article class="card_article">
+            <img src="./images/History.jpg" alt="image" class="card_img">
+            <div class="card_data">
+                <span class="card_description">History</span>
+                <h2 class="card_title">History</h2>
+                <a href="#" class="card_button">Read More</a>
+            </div>
+        </article>
+        <article class="card_article">
+            <img src="./images/History.jpg" alt="image" class="card_img">
+            <div class="card_data">
+                <span class="card_description">Offer type of book like motivation,general knowledge and scientist </span>
+                <h2 class="card_title">Education</h2>
+                <a href="#" class="card_button">Read More</a>
+            </div>
+        </article>
+    </div>
+
+</div> -->
+
+ <div class="book-categories">
+
+
+        <div class="category-item">
+            <img src="./images/novel.jpg" alt="Bestseller books - Novel Book">
+            <h2>Novel Book</h2>
+            <p>Dive into  the world of great story</p>
+            <button class="learn-more-btn">LEARN MORE</button>
+        </div>
+        <div class="category-item">
+            <img src="./images/History.jpg" alt="Bestseller books - Novel Book">
+            <h2>History</h2>
+            <p>Learn from the past</p>
+            <button class="learn-more-btn">LEARN MORE</button>
+        </div>
+        <div class="category-item">
+            <img src="./images/scienst.jpg" alt="Bestseller books - Novel Book">
+            <h2>Science</h2>
+            <p>Gain New Sill that you want</p>
+            <button class="learn-more-btn">LEARN MORE</button>
+        </div>
+
+        <div class="category-item">
+            <img src="./images/knowledge.jpg" alt="Knowledge books - History Book">
+            <h2>Motivation/General Knowledge</h2>
+            <p>Gain general information</p>
+            <button class="learn-more-btn">LEARN MORE</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Book on sale section -->
+ <section class="books_on_salles_section" id="bookonsale">
+    <div class="books_on_sales_container">
+     <div class="title_container">
+      <h4>Book On Sale: Motivation,Encouragtion and life Changing Series</h4>
+      <h1>General knowledge</h1>
+      <p>Explore based on your favorite type of books.Enjoy your Shopping.</p>
+    </div>
+    <div class="content_container">
+            <!-- Swiper -->
+        <div class="swiper-container BookOnSaleSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/book2.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/book3.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/book4.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/book8.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/book9.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/book10.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/book2.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/book4.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+    </div>
+ </section>
+
+ <!-- New Lauch Section start -->
+  <section class="new_launch_section">
+        <div class="new_launch_container">
+            <div class="col">
+                <div class="img_container">
+                    <img src="./images/newlaunch1.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="title_container">
+                <h2>New Release Spotlight</h2>
+                <h1>The Secret Garden</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, tempore. Ut mollitia, tenetur quis eum rerum libero fugiat illo amet architecto reprehenderit repellendus, quae corrupti, ipsam facere fuga numquam pariatur.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sequi, quas unde impedit aut necessitatibus porro nobis deserunt neque aliquam magnam, sed sint saepe perferendis, reprehenderit facere cum tempora consequatur?
+
+                </p>
+
+                </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam laborum ab illo molestiae quaerat cum provident, quis aperiam eveniet doloremque minus unde, dicta dolor adipisci temporibus! Illo, dignissimos optio?
+                Illo numquam cumque explicabo expedita laudantium molestiae id at sint fugit quas dolorem unde, quam, velit quae ratione odit dignissimos repellendus. Unde reiciendis laborum id corrupti repellendus error ipsa necessitatibus.</p>
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+  </section>
+
+
+
+<!-- Book on sale section -->
+ <section class="books_on_salles_section">
+    <div class="books_on_sales_container">
+     <div class="title_container">
+      <h4>Novel Series</h4>
+      <h1>Novel lover type</h1>
+      <p>Imagine as any chacter you want</p>
+    </div>
+    <div class="content_container">
+            <!-- Swiper -->
+        <div class="swiper-container BookOnSaleSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/bo2.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/bo1.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/bo3.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/bo4.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/bo5.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="product_card">
+                    <div class="img_container">
+                    <img src="./images/bo6.jpg" alt="book">
+                    </div>
+                    <div class="text_container">
+                    <h5>P.S I Still Love You</h5>
+                    <h3>JENNY HAN</h3>
+                    <div class="col">
+                        <div class="ratings">
+                        <p><i class="fa-solid fa-star"></i>4.7</p>
+                        </div>
+                        <h2 class="price">$15.00</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+    </div>
+ </section>
+
+
+<!-- NewSlater section Starts -->
+<div class="newsletter_section">
+    <div class="newsletter_container">
+        <div class="newsletter_inner">
+            <h1>Subscribe to Our Newsletter for Newest Books Update</h1>
+            <div class="input_container">
+                <input type="email" placeholder="Enter Your Email Here" name="newsletter" id="newsletter">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer section -->
+<footer class="footer_section">
+    <div class="footer_container">
+        <div class="col">
+                <div class="logo_container">
+                    <img src="./images/logo2.png" alt="logo" class="logo">
+                        <h3>Bookly</h3>
+                </div>
+                <div class="about_container">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui accusamus, eveniet perferendis accusantium dolore quibusdam sint? Incidunt, repellat! Facilis porro reprehenderit accusantium mollitia, debitis distinctio sed earum delectus nesciunt voluptas?</p>
+                </div>
+                <div class="social_container">
+                    <h1>Follow Us</h1>
+                    <div class="social_row">
+                        <button><i class="fa-brands fa-facebook"></i></button>
+                        <button><i class="fa-brands fa-youtube"></i></button>
+                        <button><i class="fa-brands fa-x-twitter"></i></button>
+                        <button><i class="fa-brands fa-instagram"></i></button>
+                    </div>
+                </div>
+        </div>
+         <div class="col">
+            <div class="menu_container">
+                <h1>Quick Links</h1>
+                            <ul class="menu_list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Special Offers</a></li>
+                                <li><a href="#">Flash Sale</a></li>
+                                <li><a href="#">Book On Sale</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="menu_container">
+                <h1>Books Categories</h1>
+                             <ul class="menu_list">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Novel</a></li>
+                                <li><a href="#">Motivation</a></li>
+                                <li><a href="#">Comedy</a></li>
+                                <li><a href="#">Romance</a></li>
+                                <li><a href="#">Crime</a></li>
+                                <li><a href="#">Mystery</a></li>
+                            </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="menu_container">
+                <h1>
+                Our Store
+                </h1>
+                <div class="map_container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.478695954292!2d104.89528870691791!3d11.50875030300548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaccccadd91787c0f%3A0xd84b1dc5930399d9!2sPRO%20Dolphin%20Cambodia!5e0!3m2!1sen!2skh!4v1750244704755!5m2!1sen!2skh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="address_container">
+                    <ul>
+                        <li>15, Example Road, Phnom Penh</li>
+                        <li>+855 10524888</li>
+                        <li>support@bookly.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy_right_container">
+        <div class="col">
+            <p>Books <i class="fa-regular fa-copyright"></i> All Rights Reserved</p>
+        </div>
+        <div class="col">
+            Made With <i class="fa-solid fa-heart love"></i> by Click To Gain
+        </div>
+    </div>
+</footer> 
+
+ <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js" integrity="sha512-j12pXc2gXZL/JZw5Mhi6LC7lkiXL0e2h+9ZWpqhniz0DkDrO01VNlBrG3LkPBn6DgG2b8CDjzJT+lxfocsS1Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- scroll reveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="./script.js"></script>
+</body>
+</html>

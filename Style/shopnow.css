@@ -1,0 +1,291 @@
+/* Add this to your shopnow.css */
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0 10px 0; /* Adjust margin as needed */
+}
+
+/* Existing arrivals CSS and cart CSS (from previous turn) remain the same */
+.cart {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px; /* Limit width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#cart-items li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #eee;
+}
+
+
+
+
+#cart-items li img {
+    width: 50px; /* Width of the book image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and title */
+}
+
+
+
+
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+.cart-item-quantity {
+    width: 60px; /* Slightly wider for better input */
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.remove-from-cart {
+    background-color: #dc3545; /* Red for removal */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.remove-from-cart:hover {
+    background-color: #c82333;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 22px; /* Slightly larger total font */
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 2px solid #eee;
+    font-weight: bold;
+    color: #28a745; /* Green for total price */
+}
+
+#clear-cart-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #6c757d; /* Grey for clear cart */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+#clear-cart-btn:hover {
+    background-color: ;
+}
+
+/* Ensure the cart section has some top margin */
+.cart-section {
+    margin-top: 50px;
+    padding-bottom: 50px; /* Add some space at the bottom of the page */
+}
+
+/* Style for the Pay Now button */
+#paynow {
+    background-color: #4CAF50; /* A pleasant green */
+    color: white; /* White text */
+    padding: 10px 20px; /* Ample padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Indicate it's clickable */
+    font-size: 16px; /* Readable font size */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 15px; /* Space above the button */
+    width: 100%; /* Make the button full width within its container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#paynow:hover {
+    background-color: #197d1e; /* Darker green on hover */
+}
+
+#paynow:active {
+    background-color: #114212; /* Even darker green when clicked */
+    transform: translateY(1px); /* Slight press effect */
+}
+/* Keep your existing arrivals CSS */
+.arrivals{
+    width: 100%;
+    /* height: 100vh; */ /* Remove or adjust if content overflows viewport */
+    padding-top: 20px; /* Add some top padding */
+    padding-bottom: 50px;
+    margin-bottom: 35px;
+}
+.arrivals h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.arrivals .arrivals_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* More flexible grid */
+    gap: 25px; /* Use gap for consistency */
+    justify-content: center; /* Center cards if they don't fill the row */
+}
+.arrivals .arrivals_box .arrivals_card{
+    width: 100%; /* Make cards fill their grid column */
+    max-width: 280px; /* Max width to prevent them from becoming too wide */
+    height: auto; /* Adjust height based on content */
+    text-align: center;
+    padding: 10px; /* Increase padding for better look */
+    border: 1px solid #e0e0e0; /* Lighter border */
+    margin: auto;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s ease;
+}
+.arrivals .arrivals_box .arrivals_card:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Enhanced shadow on hover */
+}
+.arrivals .arrivals_box .arrivals_card .arrivals_image{
+    width: 180px; /* Slightly larger image container */
+    height: 250px; /* Slightly larger image container */
+    margin: 0 auto 10px auto; /* Add bottom margin */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 4px; /* Rounded corners for image */
+}
+.arrivals .arrivals_box .arrivals_card .arrivals_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s ease;
+}
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img{
+    transform: scale(1.05); /* Slightly less aggressive zoom */
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; /* Slightly smaller font for consistency */
+    margin: 5px 0;
+    color: #555;
+}
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+    color: #FFD700; /* Gold color for stars */
+    margin-bottom: 12px; /* Reduced margin */
+    font-size: 1.1rem; /* Slightly larger stars */
+}
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn{
+    display: inline-block; /* Make button behave like a block for padding */
+    padding: 10px 25px; /* More padding for a better button look */
+    border: 2px solid #511d08; /* Blue border for "Add to Cart" */
+    background-color: #FF5F1F;
+    color: white; /* White text for button */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn:hover{
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+    .arrivals .arrivals_box {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .arrivals .arrivals_box {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .arrivals h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .arrivals .arrivals_box {
+        grid-template-columns: 1fr;
+    }
+    .arrivals h1 {
+        font-size: 30px;
+    }
+    .arrivals .arrivals_box .arrivals_card {
+        max-width: 90%; /* Allow cards to take more width on small screens */
+    }
+    .arrivals .arrivals_box .arrivals_card .arrivals_image {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+.cart-icon-container {
+    position: relative; /* Keep this */
+    /* Add any display/margin to align it with your other icons */
+    display: flex; /* Or inline-block */
+    align-items: center;
+    justify-content: center;
+    margin-left: 0; /* Example spacing if needed */
+    cursor: pointer;
+}
+.cart-icon-container .fas.fa-shopping-cart {
+    font-size: 24px; /* Ensure your icon size is consistent */
+    color: #333; /* Ensure your icon color is consistent */
+    text-decoration: none; /* Remove underline from <a> */
+}
+.cart-icon-container .fas.fa-shopping-cart:hover {
+    color: #FF5F1F;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;   /* You might need to tweak this value */
+    right: -8px; /* You might need to tweak this value */
+    background-color: #FF5F1F;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    height: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
